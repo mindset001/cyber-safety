@@ -26,7 +26,7 @@ body {
 }
 
 .herobg {
-  background: url('@/public/assets/anthill.jpg') no-repeat center center/cover;
+  background: url('../public/assets/anthill.jpg') no-repeat center center/cover;
   color: var(--foreground);
   /* opacity: 0.5; */
   
