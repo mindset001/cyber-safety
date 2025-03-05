@@ -31,3 +31,10 @@ body {
   /* opacity: 0.5; */
   
 }
+
+.herobg2 {
+  background: url('../public/assets/new.jpg') no-repeat center center/cover;
+  color: var(--foreground);
+  /* opacity: 0.5; */
+  
+}
