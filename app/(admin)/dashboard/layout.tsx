@@ -18,7 +18,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
          <Link href='/'> <Image src={Logo} alt="Logo" /></Link>
         </div>
         <nav className="mt-6 space-y-4">
-          <button onClick={() => router.push('/admin/dashboard')} className="block p-2 text-gray-700 hover:bg-gray-200 rounded w-full text-left">
+          <button onClick={() => router.push('/dashboard')} className="block p-2 text-gray-700 hover:bg-gray-200 rounded w-full text-left">
             Home
           </button>
           <button onClick={() => router.push('/dashboard/blog')} className="block p-2 text-gray-700 hover:bg-gray-200 rounded w-full text-left">
@@ -45,7 +45,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         </header>
 
         {/* Dynamic Page Content */}
-        <main className="p-6 flex-1">{children}</main>
+        <main className="p-6">{children}</main>
       </div>
     </div>
   );

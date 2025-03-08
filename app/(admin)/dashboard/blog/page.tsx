@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { FaEllipsisV } from 'react-icons/fa';
 import { Menu } from '@headlessui/react';
-
 
 type BlogStatus = 'Published' | 'Draft' | 'Archived';
 
@@ -21,6 +21,12 @@ const statusColors = {
 };
 
 export default function BlogTable() {
+  const router = useRouter();
+
+  const handleEdit = (id: number) => {
+    router.push(`/dashboard/editblog/${id}`);
+  };
+
   return (
     <div className="p-6">
       <h3 className="text-lg font-bold mb-4">Blogs</h3>
@@ -37,35 +43,36 @@ export default function BlogTable() {
           </thead>
           <tbody>
             {blogs.map((blog) => (
-              <tr key={blog.id} className="border text-center ">
+              <tr key={blog.id} className="border text-center">
                 <td className="p-3">{blog.id}</td>
                 <td className="p-3">{blog.title}</td>
                 <td className={`p-3 rounded-full text-sm ${statusColors[blog.status]}`}>{blog.status}</td>
                 <td className="p-3">{blog.views}</td>
                 <td className="p-3 relative">
-                <Menu as="div" className="relative inline-block text-left">
-  <Menu.Button className="p-2 rounded hover:bg-gray-200">
-    <FaEllipsisV />
-  </Menu.Button>
-  <Menu.Items className="absolute right-0 mt-2 w-32 bg-white border rounded-md shadow-lg">
-    <Menu.Item>
-      {({ active }) => (
-        <button className={`p-2 w-full text-left ${active ? 'bg-gray-100' : ''}`}>
-          Edit
-        </button>
-      )}
-    </Menu.Item>
-    <Menu.Item>
-      {({ active }) => (
-        <button className={`p-2 w-full text-left text-red-500 ${active ? 'bg-gray-100' : ''}`}>
-          Delete
-        </button>
-      )}
-    </Menu.Item>
-  </Menu.Items>
-</Menu>
-
-
+                  <Menu as="div" className="relative inline-block text-left">
+                    <Menu.Button className="p-2 rounded hover:bg-gray-200">
+                      <FaEllipsisV />
+                    </Menu.Button>
+                    <Menu.Items className="absolute right-0 mt-2 w-32 bg-white border rounded-md shadow-lg">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <button
+                            onClick={() => handleEdit(blog.id)}
+                            className={`p-2 w-full text-left ${active ? 'bg-gray-100' : ''}`}
+                          >
+                            Edit
+                          </button>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <button className={`p-2 w-full text-left text-red-500 ${active ? 'bg-gray-100' : ''}`}>
+                            Delete
+                          </button>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Menu>
                 </td>
               </tr>
             ))}
