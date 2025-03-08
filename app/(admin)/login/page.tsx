@@ -35,7 +35,7 @@ export default function page() {
 
           <button
             type="submit"
-            className="w-full rounded-lg bg-blue-600 p-3 text-white transition hover:bg-blue-700"
+            className="w-full rounded-lg bg-[#7886C7] p-3 text-white transition hover:bg-blue-700"
           >
           <Link href='/dashboard'>  Sign In</Link>
           </button>

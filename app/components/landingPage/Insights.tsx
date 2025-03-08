@@ -9,7 +9,7 @@ export default function Insights() {
   return (
     <section className="max-w-6xl  py-16 ">
       <div className="text-center">
-        <h3 className="text-blue-600 font-semibold">News</h3>
+        <h3 className="text-[#16B7D9] font-semibold">News</h3>
         <h2 className="text-4xl font-bold mt-2">Insights</h2>
       </div>
 

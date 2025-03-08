@@ -12,7 +12,7 @@ const About = () => {
         animate={{ opacity: 1, x: 0 }} 
         transition={{ duration: 0.8 }}
       >
-        <h4 className="text-blue-600 font-semibold text-lg">Our Story</h4>
+        <h4 className="text-[#16B7D9] font-semibold text-lg">Our Story</h4>
         <h2 className="text-4xl font-bold text-gray-900 mt-2">About Us</h2>
         <p className="text-gray-600 mt-4">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
@@ -24,7 +24,7 @@ const About = () => {
         <motion.button 
           whileHover={{ scale: 1.1 }} 
           whileTap={{ scale: 0.95 }} 
-          className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg flex items-center gap-2"
+          className="mt-6 px-6 py-3 bg-[#16B7D9] text-white font-semibold rounded-lg flex items-center gap-2"
         >
           GET STARTED →
         </motion.button>
@@ -34,7 +34,7 @@ const About = () => {
       <div className="relative md:w-1/2 flex justify-center mt-10 md:mt-0">
         {/* Background Decorative Shape */}
         <motion.div 
-          className="absolute -top-6 right-50 w-42 h-42  border-30 border-blue-300 rounded-full opacity-30"
+          className="absolute -top-6 right-50 w-42 h-42  border-30 border-[#16B7D9] rounded-full opacity-30"
           initial={{ scale: 0, opacity: 0 }} 
           animate={{ scale: 1, opacity: 1 }} 
           transition={{ duration: 1, delay: 0.5 }}

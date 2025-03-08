@@ -27,7 +27,7 @@ export default function ResultsSection() {
     <section className="max-w-6xl mx-auto px-6 py-12 lg:flex gap-10">
       {/* Left Side: List of Categories */}
       <div className="flex-1">
-        <h3 className="text-blue-600 font-semibold">Our Approach</h3>
+        <h3 className="text-[#16B7D9] font-semibold">Our Approach</h3>
         <h2 className="text-4xl font-bold">Results</h2>
         <p className="text-gray-600 mt-3">
           Lorem Ipsum is simply dummy text of the printing and typesetting

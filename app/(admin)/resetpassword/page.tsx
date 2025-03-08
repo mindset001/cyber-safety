@@ -47,7 +47,7 @@ export default function ResetPassword() {
                 className="mt-1 w-full rounded-lg border border-gray-300 p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300"
               />
             </div>
-            <button type="submit" className="w-full rounded-lg bg-blue-600 p-3 text-white transition hover:bg-blue-700">
+            <button type="submit" className="w-full rounded-lg bg-[#A1E3F9] p-3 text-white transition hover:bg-blue-700">
               Send Reset Link
             </button>
           </form>
@@ -77,7 +77,7 @@ export default function ResetPassword() {
               />
             </div>
 
-            <button type="submit" className="w-full rounded-lg bg-blue-600 p-3 text-white transition hover:bg-blue-700">
+            <button type="submit" className="w-full rounded-lg bg-[#A1E3F9] p-3 text-white transition hover:bg-blue-700">
               Reset Password
             </button>
           </form>
