@@ -5,19 +5,46 @@ import Image from "next/image";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const items = [
-  { title: "Professional Development", content:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", },
-  { title: "Business Consultant", content:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",},
-  { title: "Project Manager", content:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", },
-  { title: "Travel Management",content:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", },
   {
-    title: "Meetings & Conference Planners",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    title: "Cyber Awareness & Compliance Training",
+    content: [
+      "Engaging training programs covering Phishing awareness, Data privacy & protection, Insider threats,Secure remote work best practices.",
+      "Aligned with regulatory standards such as GDPR, ISO 27001, Cyber Essentials, and NIST.",
+      "Delivered via Gamified e-learning, In-person workshops, Immersive simulations & experiential training."
+    ]
   },
+  {
+    title: "Behavioral Risk Assessment & Insider Threat Mitigation",
+    content: [
+      "Human Risk Score™ – Measure cybersecurity awareness levels and identify risk-prone behaviors.",
+      "Insider Threat Monitoring – Proactively detect and prevent security risks from within.",
+      "Data-Driven Risk Reports – Gain insights into employee behavior and tailor training accordingly."
+    ]
+  },
+  {
+    title: "Phishing & Social Engineering Simulations",
+    content: [
+      "Real-world phishing & scam simulations to test employee response in a safe, controlled environment.",
+      "Track progress & behavior patterns to measure cyber awareness improvement.",
+      "Immediate feedback & corrective training for users who fail simulated attacks."
+    ]
+  },
+  {
+    title: "Gamified Learning & Experiential Cyber Training",
+    content: [
+      "Board Games & Escape Room Challenges – Making cybersecurity training engaging and interactive.",
+      "QR Code-Based Mobile Challenges – Learn on the go with quick, real-world cyber scenarios.",
+      "Cyber Hygiene Habit Builder – Reinforce safe digital behaviors through daily microlearning exercises."
+    ]
+  },
+  {
+    title: "Incident Response & Crisis Preparedness",
+    content: [
+      "Rapid Response Playbooks – Step-by-step guides for handling phishing, ransomware, and insider threats.",
+      " Role-based Security Drills & Crisis Simulations – Realistic scenarios for executives, HR teams, and IT departments.",
+      "Policy Development & Compliance Guidance – Create and implement cybersecurity policies that align with regulations."
+    ]
+  }
 ];
 
 export default function ResultsSection() {
@@ -57,7 +84,11 @@ export default function ResultsSection() {
                 {items[selectedIndex].title}
                 <FaArrowUpRightFromSquare className="ml-2" />
               </h3>
-              <p className="mt-2 text-gray-600">{items[selectedIndex].content}</p>
+              <ul className="mt-2 text-gray-600 list-disc list-inside">
+                {items[selectedIndex].content.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </div>
           )}
         </div>

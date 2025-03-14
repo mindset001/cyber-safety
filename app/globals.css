@@ -26,9 +26,9 @@ body {
 }
 
 .herobg {
-  background: url('https://i.pinimg.com/474x/31/1d/2e/311d2e21b6b434a8d64f7a5ce81aca14.jpg') no-repeat center center/cover;
+  background: url('https://i.pinimg.com/736x/03/6b/90/036b908649a72df177f251c13140f75e.jpg') no-repeat center center/cover;
   color: var(--foreground);
-  /* opacity: 0.5; */
+  opacity: 0.7;
   
 }
 

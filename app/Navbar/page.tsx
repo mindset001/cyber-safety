@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import Logo from '../../public/assets/Asset 4@72x-8.png'
+import Logo from '../../public/assets/Asset 1@72x-8.png'
 import Image from 'next/image';
 
 const Navbar = () => {
@@ -11,11 +11,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-transparent bg-white  text-[#16B7D9]  z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+    <nav className="  w-full bg-transparent   text-[#fff]  z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center ">
         {/* Logo */}
         <div className="text-2xl font-bold flex items-center">
-         <Image src={Logo} alt="Logo" width={50} height={50} />
+         <Image src={Logo} alt="Logo" width={50} height={50} className='w-[80px] h-[80px]'/>
         </div>
 
         {/* Navigation Links */}

@@ -1,43 +1,60 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
-import New3 from '../../../public/assets/business.jpg'
+import New3 from '../../../public/assets/business.jpg';
 
-// Sample images (replace with actual imports if needed)
 const carouselItems = [
   {
-    title: "Market & Candidate Research",
-    description: "Lorem Ipsum is simply dummy text of the printing industry.",
-    image: New3 
+    title: "Human-Centric Approach",
+    description: "Focused on behavior, psychology, and decision-making beyond just technology",
+    image: New3,
   },
   {
-    title: "The Candidate Journey & Experience",
-    description: "Lorem Ipsum is simply dummy text of the printing industry.",
-    image: New3 // Replace with your actual image path
+    title: "Regulatory Compliance Ready",
+    description: "Ensure adherence to GDPR, ISO 27001, Cyber Essentials, and NIST.",
+    image: New3,
   },
   {
-    title: "Hiring & Onboarding",
-    description: "Lorem Ipsum is simply dummy text of the printing industry.",
-    image: New3 
+    title: "Proven Risk Reduction Strategies",
+    description: "Data-driven insights to measure actual improvements in cyber awareness",
+    image: New3,
   },
   {
-    title: "HR & Compliance",
-    description: "Lorem Ipsum is simply dummy text of the printing industry.",
-    image: New3 
+    title: "Engaging, Hands-On Training",
+    description: "People learn best by doing, not by sitting through dull PowerPoints",
+    image: New3,
   },
   {
     title: "Performance & Growth",
     description: "Lorem Ipsum is simply dummy text of the printing industry.",
-    image:  New3 , // Replace with your actual image path
+    image: New3,
   },
 ];
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3; // Show 3 items at a time
+  const [itemsPerPage, setItemsPerPage] = useState(3); // Default: Desktop (3 items)
+
+  // Detect screen size and update items per page
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      if (window.innerWidth < 640) {
+        setItemsPerPage(1); // Mobile
+      } else if (window.innerWidth < 1024) {
+        setItemsPerPage(2); // Tablet
+      } else {
+        setItemsPerPage(3); // Desktop
+      }
+    };
+
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+    
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -78,10 +95,10 @@ export default function Carousel() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="w-1/3 group p-6 bg-black text-white rounded-xl shadow-lg"
+              className="w-full sm:w-1/2 lg:w-1/3 group p-6 bg-white text-black rounded-xl shadow-lg"
             >
               <h3 className="text-xl font-semibold">{item.title}</h3>
-              <p className="mt-2 text-gray-300">{item.description}</p>
+              <p className="mt-2 text-black">{item.description}</p>
               {item.image && (
                 <Image
                   src={item.image}

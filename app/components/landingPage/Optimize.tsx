@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Optimize() {
     return (
-      <section className="bg-[#0E3B50] text-white py-16 text-center px-6">
+      <section className="bg-[#14364d] text-white py-16 text-center px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             So, Do You Need Optimising?

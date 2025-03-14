@@ -11,7 +11,7 @@ import ResultsSection from '../components/landingPage/Result'
 
 function Landing() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
         <Hero/>
         <Services/>
         <About/>

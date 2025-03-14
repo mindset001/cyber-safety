@@ -14,11 +14,10 @@ const Footer = () => {
               <span className="text-white">
                 <Image src={Logo} alt="Logo" width={50} height={50} />
               </span>
-              <span className="bg-white text-black px-2 ml-1 rounded-md text-10">Cyber Safety <br />Institute</span>
+              <span className="bg-white text-black px-2 ml-1 rounded-md text-10">Cyber Safety <br />Alliance</span>
             </div>
-            <p className="mt-4 text-sm text-gray-400">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s.
+            <p className="mt-4 text-[12px] text-gray-400">
+            Cyber Safety Alliance (CSA) is a Human Risk Management (HRM) and Cyber Awareness Training Firm that specializes in interactive cybersecurity education, behavioral risk mitigation, and compliance-driven training for individuals and organizations.
             </p>
           </div>
   
@@ -61,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-gray-500 text-sm border-t border-gray-700 pt-4">
-          &copy; 2025 cyber safety institute. All rights reserved.
+          &copy; 2025 cyber safety alliance. All rights reserved.
         </div>
       </footer>
    </div>
