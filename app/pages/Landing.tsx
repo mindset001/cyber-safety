@@ -15,13 +15,21 @@ function Landing() {
     <main className='overflow-x-hidden'>
         <Hero/>
         <Services/>
+        <div id='about-us'>
         <About/>
+        </div>
        <Team/>
-        <ResultsSection />
+       <div id='what-we-do'>
+       <ResultsSection />
+       </div>
         <Solutions/>
+        <div id='blog'>
         <Insights/>
+        </div>
         <Optimize/>
+        <div id='contact-us'>
         <ContactForm/>
+        </div>
         <Footer/>
       
     </main>

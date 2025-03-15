@@ -6,7 +6,7 @@ import { message } from 'antd';
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xdkekaor");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p>Thanks for Cyber Safety Alliance, One of our Personnels will reach out to you.</p>;
       // message.success('Thanks for joining!'); 
   }
     return (
