@@ -6,8 +6,8 @@ import { message } from 'antd';
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xdkekaor");
   if (state.succeeded) {
-      // return <p>Thanks for joining!</p>;
-      message.success('Thanks for joining!'); 
+      return <p>Thanks for joining!</p>;
+      // message.success('Thanks for joining!'); 
   }
     return (
       <div className="max-w-5xl mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -23,35 +23,35 @@ export default function ContactForm() {
         {/* Right Side Form */}
         <form onSubmit={handleSubmit} className="space-y-4 bg-white">
           <div className="grid grid-cols-2 gap-4">
-            <input type="text" id='name' placeholder="Name" className="border-b border-gray-300 p-2 focus:outline-none" />
+            <input type="text" id='name' name='name' placeholder="Name" className="border-b border-gray-300 p-2 focus:outline-none" />
             <ValidationError 
-        prefix="Message" 
+        prefix="Name" 
         field="name"
         errors={state.errors}
       />
-            <input type="text" id='job-title' placeholder="Job Title" className="border-b border-gray-300 p-2 focus:outline-none" />
+            <input type="text" id='job-title' name='job-title' placeholder="Job Title" className="border-b border-gray-300 p-2 focus:outline-none" />
             <ValidationError 
-        prefix="Message" 
+        prefix="Job-tiltle" 
         field="Job-tiltle"
         errors={state.errors}
       />
           </div>
-          <input type="text" placeholder="Company" id='company' className="border-b border-gray-300 p-2 w-full focus:outline-none" />
+          <input type="text" placeholder="Company"name='company' id='company' className="border-b border-gray-300 p-2 w-full focus:outline-none" />
           <ValidationError 
-        prefix="Message" 
+        prefix="Company" 
         field="company"
         errors={state.errors}
       />
           <div className="grid grid-cols-2 gap-4">
-            <input type="email"  id="email" placeholder="Email" className="border-b border-gray-300 p-2 focus:outline-none" />
+            <input type="email"  id="email" name='email' placeholder="Email" className="border-b border-gray-300 p-2 focus:outline-none" />
             <ValidationError 
-        prefix="Message" 
+        prefix="Email" 
         field="email"
         errors={state.errors}
       />
-            <input type="text" id='phone' placeholder="Phone" className="border-b border-gray-300 p-2 focus:outline-none" />
+            <input type="text" id='phone' name='phone-number' placeholder="Phone" className="border-b border-gray-300 p-2 focus:outline-none" />
             <ValidationError 
-       
+       prefix='Phone'
         field="phone"
         errors={state.errors}
       />
