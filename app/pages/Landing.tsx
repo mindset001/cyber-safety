@@ -8,6 +8,7 @@ import Insights from '../components/landingPage/Insights'
 import Optimize from '../components/landingPage/Optimize'
 import Solutions from '../components/landingPage/Solutions'
 import ResultsSection from '../components/landingPage/Result'
+import Team from '../components/landingPage/Team'
 
 function Landing() {
   return (
@@ -15,8 +16,9 @@ function Landing() {
         <Hero/>
         <Services/>
         <About/>
-        <Solutions/>
+       <Team/>
         <ResultsSection />
+        <Solutions/>
         <Insights/>
         <Optimize/>
         <ContactForm/>

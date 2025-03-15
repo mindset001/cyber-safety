@@ -12,7 +12,7 @@ const About = () => {
         animate={{ opacity: 1, x: 0 }} 
         transition={{ duration: 0.8 }}
       >
-        <h4 className="text-[#19b6d7] font-semibold text-lg">Our Story</h4>
+        {/* <h4 className="text-[#19b6d7] font-semibold text-lg">Our Story</h4> */}
         <h2 className="text-4xl font-bold text-gray-900 mt-2">About Us</h2>
         <p className="text-gray-600 mt-4">
         Cyber Safety Alliance (CSA) is a Human Risk Management (HRM) and Cyber Awareness Training Firm that specializes in interactive cybersecurity education, behavioral risk mitigation, and compliance-driven training for individuals and organizations. We recognize that technology alone cannot protect businesses—human behavior is the first line of defense against cyber threats.

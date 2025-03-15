@@ -13,9 +13,9 @@ export default function Insights() {
         <h2 className="text-4xl font-bold mt-2">Blogs</h2>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-10">
+      <div className="grid md:grid-cols-3 gap-6 mt-10 px-4 md:px-16">
         {/* Main Article */}
-        <div className="herobg2 relative col-span-2">
+        <div className="hidden md:block herobg2 relative col-span-2">
           <div className="absolute bottom-0 left-20  bg-opacity-50 text-white p-6 rounded-b-lg w-full">
             <p className="text-sm">May 12, 2024</p>
             <h3 className="text-xl font-bold">Meetings & Conference Planners</h3>
@@ -44,11 +44,6 @@ export default function Insights() {
         </div>
       </div>
 
-      {/* Navigation Buttons */}
-      <div className="flex justify-end mt-6 gap-3">
-        <button className="p-2 bg-gray-200 rounded-full">⬅</button>
-        <button className="p-2 bg-black text-white rounded-full">➡</button>
-      </div>
     </section>
   );
 }
