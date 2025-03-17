@@ -6,65 +6,42 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const items = [
   {
-    title: "Cyber Awareness & Compliance Training",
+    title: "Phishing Simulations",
+    description: 'We offer a comprehensive suite of phishing simulations to test and strengthen your team’s ability to recognize and respond to cyber threats. Each simulation delivers immediate feedback and educational resources to drive learning and improve resilience.',
     content: [
-      "Engaging training programs covering Phishing awareness, Data privacy & protection, Insider threats,Secure remote work best practices.",
-      "Aligned with regulatory standards such as GDPR, ISO 27001, Cyber Essentials, and NIST.",
-      "Delivered via Gamified e-learning, In-person workshops, Immersive simulations & experiential training."
+      "Email Phishing Simulation*: Realistic email scenarios to assess and enhance vigilance against phishing attempts.",
+      "Smishing Simulation*: SMS-based simulations to build awareness of text message scams",
+      "Vishing Simulation*: Voice call simulations to prepare your team for phone-based social engineering tactics.",
+      "Quishing Simulation*: QR code-based simulations to educate on the dangers of malicious QR codes. ",
+      "Callback Simulation*: Scenarios testing responses to callback requests, a subtle yet common phishing technique. "
     ]
   },
   {
-    title: "Behavioral Risk Assessment & Insider Threat Mitigation",
+    title: "Bespoke Interactive Training",
+    description: '',
     content: [
-      "Human Risk Score™ – Measure cybersecurity awareness levels and identify risk-prone behaviors.",
-      "Insider Threat Monitoring – Proactively detect and prevent security risks from within.",
-      "Data-Driven Risk Reports – Gain insights into employee behavior and tailor training accordingly."
-    ]
-  },
-  {
-    title: "Phishing & Social Engineering Simulations",
-    content: [
-      "Real-world phishing & scam simulations to test employee response in a safe, controlled environment.",
-      "Track progress & behavior patterns to measure cyber awareness improvement.",
-      "Immediate feedback & corrective training for users who fail simulated attacks."
-    ]
-  },
-  {
-    title: "Gamified Learning & Experiential Cyber Training",
-    content: [
-      "Board Games & Escape Room Challenges – Making cybersecurity training engaging and interactive.",
-      "QR Code-Based Mobile Challenges – Learn on the go with quick, real-world cyber scenarios.",
-      "Cyber Hygiene Habit Builder – Reinforce safe digital behaviors through daily microlearning exercises."
-    ]
-  },
-  {
-    title: "Incident Response & Crisis Preparedness",
-    content: [
-      "Rapid Response Playbooks – Step-by-step guides for handling phishing, ransomware, and insider threats.",
-      " Role-based Security Drills & Crisis Simulations – Realistic scenarios for executives, HR teams, and IT departments.",
-      "Policy Development & Compliance Guidance – Create and implement cybersecurity policies that align with regulations."
+      "Our customized, hands-on training programs are tailored to your organization’s unique needs. Through interactive workshops, gamified experiences, and real-world scenarios, we promote lasting habit change, ensuring your team adopts the behaviors needed to stay secure in a digital world. ",
+   
     ]
   }
+
 ];
 
 export default function ResultsSection() {
-  const [selectedIndex, setSelectedIndex] = useState(4); // Default active item
+  const [selectedIndex, setSelectedIndex] = useState(0); // Default active item
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12  gap-10 mt-10">
-       <h3 className="text-[#16B7D9] font-semibold text-center">Our Approach</h3>
+       <h3 className="text-[#16B7D9] font-semibold text-center">What We Do</h3>
       <div className="flex flex-col md:flex-row gap-4 mt-10">
         {/* Left Side: List of Categories */}
       <div className="flex-1">
        
-       {/* <h2 className="text-4xl font-bold">Results</h2> */}
-       {/* <p className="text-gray-600 mt-3">
-         Lorem Ipsum is simply dummy text of the printing and typesetting
-         industry. Lorem Ipsum has been the industry's standard dummy text ever
-         since the 1500s.
-       </p> */}
+     
 
        <div className="mt-6 space-y-4">
+        <p>At Cyber Safety Alliance, we specialize in Human Risk Management, empowering your team to reduce cybersecurity risks through targeted education and practical experience. Our services include:
+        </p>
          {items.map((item, index) => (
            <div
              key={index}
@@ -74,6 +51,7 @@ export default function ResultsSection() {
              onClick={() => setSelectedIndex(index)}
            >
              {item.title}
+             <p className="font-[300] text-[14px]">{item.description}</p>
            </div>
          ))}
        </div>

@@ -20,7 +20,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-8">
-          {['Home', 'What We Do', 'About Us', 'Blog', 'Contact US'].map((item) => (
+          {['Home', 'What We Do', 'About Us',  'Contact US'].map((item) => (
             <Link key={item} href={`#${item.replace(/\s+/g, '-').toLowerCase()}`} className="relative group">
               <span className={`uppercase text-sm font-medium tracking-wide hover:text-gray-300 ${pathname === `/${item.toLowerCase()}` ? 'text-blue-400' : ''}`}>{item}</span>
               <span className={`absolute left-0 -bottom-1 h-0.5 bg-blue-400 transition-all duration-300 ${pathname === `/${item.toLowerCase()}` ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>

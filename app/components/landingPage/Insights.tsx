@@ -4,6 +4,8 @@ import Image from 'next/image';
 import New from '../../../public/assets/new.jpg'
 import New2 from '../../../public/assets/two.jpg'
 import New3 from '../../../public/assets/business.jpg'
+import { Button } from "antd";
+import Link from "next/link";
 
 export default function Insights() {
   return (
@@ -26,7 +28,7 @@ export default function Insights() {
         {/* Smaller Articles */}
         <div className="space-y-6">
           <div className="flex gap-4">
-            <Image src={New2}alt="Travel" width={150} height={100} className="rounded-lg w-[150px] h-[150px]" />
+            <Image src={New2} alt="Travel" width={150} height={100} className="rounded-lg w-[150px] h-[150px]" />
             <div>
               <p className="text-sm text-gray-500">May 12, 2024</p>
               <h3 className="text-lg font-bold">Travel Management</h3>
@@ -42,6 +44,10 @@ export default function Insights() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-end items-right mt-6">
+        <Link href='/blog'>      <button className="cursor-pointer mt-6 px-6 py-3 bg-[#0a4b6b] text-white font-semibold rounded-lg flex items-center text-center gap-2">All Blogs</button></Link>
       </div>
 
     </section>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
           whileTap={{ scale: 0.95 }} 
           className="mt-6 px-6 py-3 bg-[#0a4b6b] text-white font-semibold rounded-lg flex items-center gap-2"
         >
-          GET STARTED →
+        <Link href='#contact-us'> Contact Us</Link>
         </motion.button>
       </motion.div>
 

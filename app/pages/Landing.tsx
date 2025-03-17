@@ -18,15 +18,15 @@ function Landing() {
         <div id='about-us'>
         <About/>
         </div>
-       <Team/>
+       {/* <Team/> */}
        <div id='what-we-do'>
        <ResultsSection />
        </div>
         <Solutions/>
-        <div id='blog'>
+        {/* <div id='blog'>
         <Insights/>
-        </div>
-        <Optimize/>
+        </div> */}
+        {/* <Optimize/> */}
         <div id='contact-us'>
         <ContactForm/>
         </div>
