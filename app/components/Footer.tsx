@@ -7,12 +7,12 @@ const Footer = () => {
     return (
    <div className="w-full flex justify-center bg-black text-white">
      <footer className=" w-[80%] bg-black text-white py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center gap-8">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-8">
           {/* Logo and description */}
           <div>
             <div className="text-10 font-bold flex items-center">
               <span className="text-white">
-                <Image src={Logo} alt="Logo" width={50} height={50} className="h-[80px] w-[120px]"/>
+                <Image src={Logo} alt="Logo" width={50} height={50} className="md:h-[80px] md:w-[120px] "/>
               </span>
            
             </div>
