@@ -12,7 +12,6 @@ const Services = () => {
         At Cyber Safety Alliance, 
 We believe the industry needs to move away from a reactive mindset and embrace a proactive, people-first approach. Our mission is to make cybersecurity something that is understood, lived, and practiced by everyone not just the IT team. That’s why our programs are hands-on, engaging, and grounded in real-world situations. Whether it's defending against phishing, social engineering, insider threats, or accidental data exposure, we prepare people to act with awareness and confidence.
 
-
         </p>
       </div>
 

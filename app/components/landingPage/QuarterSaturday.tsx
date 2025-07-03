@@ -37,7 +37,7 @@ export default function QuarterSaturdaysPage() {
   }, [targetDate]);
 
   return (
-    <div className=" py-6 bg-white text-black">
+    <div className=" py-6 text-black">
       {/* <h1 className="text-2xl font-bold mb-4">Last Saturdays of Each Quarter – {year}</h1> */}
 
       {/* <ul className="mb-6 list-disc pl-5">
@@ -49,7 +49,7 @@ export default function QuarterSaturdaysPage() {
       </ul> */}
 
       {targetDate ? (
-        <div className="p-4 bg-[#0a486b] border border-yellow-400 rounded-md text-white">
+        <div className="p-4  border border-yellow-400 rounded-md text-white">
           <p className="text-lg font-medium">
             🕒 Next Quarter's Saturday: <strong>{targetDate.toDateString()}</strong>
           </p>

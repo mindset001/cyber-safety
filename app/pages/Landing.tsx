@@ -10,6 +10,7 @@ import Solutions from '../components/landingPage/Solutions'
 import ResultsSection from '../components/landingPage/Result'
 import Team from '../components/landingPage/Team'
 import QuarterSaturdaysPage from '../components/landingPage/QuarterSaturday'
+import Quarter from '../components/landingPage/Quarter'
 
 function Landing() {
   return (
@@ -28,9 +29,15 @@ function Landing() {
         <Insights/>
         </div> */}
         {/* <Optimize/> */}
-        <div id='contact-us'>
-        <ContactForm/>
+        <div id='contact-us' className='flex'>
+        <div className='w-1/2'>
+          <ContactForm/>
         </div>
+<div className='w-1/2'>
+   <Quarter/>
+</div>
+        </div>
+       
         <Footer/>
       
     </main>
