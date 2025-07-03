@@ -9,7 +9,9 @@ const Services = () => {
         <h3 className="text-[#19b6d7] font-semibold text-[40px]">Our Mission</h3>
         <h2 className="text-3xl md:text-4xl font-bold mt-2">Everything We Do Is Driven By Our Mantra</h2>
         <p className="text-gray-600 mt-4 text-lg">
-        At Cyber Safety Alliance, our mission is to educate and empower individuals and organizations to navigate the digital world safely and securely. Through innovative and engaging methods—like gamified learning and real-world simulations—we strive to build a culture of cybersecurity awareness and resilience. We believe that by making cybersecurity accessible and memorable, we can help everyone, from students to professionals, protect themselves and their organizations from evolving threats.
+        At Cyber Safety Alliance, 
+We believe the industry needs to move away from a reactive mindset and embrace a proactive, people-first approach. Our mission is to make cybersecurity something that is understood, lived, and practiced by everyone not just the IT team. That’s why our programs are hands-on, engaging, and grounded in real-world situations. Whether it's defending against phishing, social engineering, insider threats, or accidental data exposure, we prepare people to act with awareness and confidence.
+
 
         </p>
       </div>
