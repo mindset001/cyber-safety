@@ -37,7 +37,7 @@ export default function QuarterSaturdaysPage() {
   }, [targetDate]);
 
   return (
-    <div className="min-h-screen py-6 bg-white text-black">
+    <div className=" py-6 bg-white text-black">
       {/* <h1 className="text-2xl font-bold mb-4">Last Saturdays of Each Quarter – {year}</h1> */}
 
       {/* <ul className="mb-6 list-disc pl-5">
