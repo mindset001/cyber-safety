@@ -6,21 +6,39 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const items = [
   {
-    title: "Phishing Simulations",
-    description: 'We offer a comprehensive suite of phishing simulations to test and strengthen your team’s ability to recognize and respond to cyber threats. Each simulation delivers immediate feedback and educational resources to drive learning and improve resilience.',
+    title: "Human Risk Management Platform ",
+    description: 'Through our integrated platform, we offer a full suite of tools to manage and reduce human-related cyber risks. This includes:'
+    ,
     content: [
-      "Email Phishing Simulation*: Realistic email scenarios to assess and enhance vigilance against phishing attempts.",
-      "Smishing Simulation*: SMS-based simulations to build awareness of text message scams",
-      "Vishing Simulation*: Voice call simulations to prepare your team for phone-based social engineering tactics.",
-      "Quishing Simulation*: QR code-based simulations to educate on the dangers of malicious QR codes. ",
-      "Callback Simulation*: Scenarios testing responses to callback requests, a subtle yet common phishing technique. "
+      "Phishing simulations",
+      "Automated training & awareness campaigns",
+      "Real-time threat reporting plugins",
+      "Behavioral risk scoring",
+      "Incident response workflows",
+      "Detailed analytics and benchmarking"
     ]
   },
   {
-    title: "Bespoke Interactive Training",
+    title: "Cyber Policy Review",
     description: '',
     content: [
-      "Our customized, hands-on training programs are tailored to your organization’s unique needs. Through interactive workshops, gamified experiences, and real-world scenarios, we promote lasting habit change, ensuring your team adopts the behaviors needed to stay secure in a digital world. ",
+      "Outdated or unclear cyber policies create gaps in both compliance and behavior. We review, update, and align your existing policies with best practices and real-world application. Whether it’s acceptable use, remote work, or breach response and we make sure your policies are usable, understood, and effective at every level. ",
+   
+    ]
+  },
+  {
+    title: "Tabletop Exercises (In-a-Box Simulations)",
+    description: '',
+    content: [
+      "We deliver ready-to-run tabletop exercises that simulate real-life cyber incidents from phishing breaches to ransomware and insider threats. These guided sessions help leadership and operational teams test their response, improve coordination, and gain confidence in their cyber preparedness. Realistic. Practical. No surprises when it counts.",
+   
+    ]
+  },
+    {
+    title: "Cybersecurity Training (Virtual & In-Person)",
+    description: '',
+    content: [
+      "Our flexible training programs meet your team where they are online or on-site, entry-level or executive. Covering everything from basic awareness to role-specific responsibilities, our sessions are designed to engage, educate, and embed secure behavior. It’s not just training it’s a long-term investment in culture.",
    
     ]
   }
@@ -40,7 +58,8 @@ export default function ResultsSection() {
      
 
        <div className="mt-6 space-y-4">
-        <p>At Cyber Safety Alliance, we specialize in Human Risk Management, empowering your team to reduce cybersecurity risks through targeted education and practical experience. Our services include:
+        <p>At CSAlliance, we help organizations reduce cybersecurity risks by focusing on the human element. From building cyber-aware cultures to strengthening behavior, our services empower people to become the strongest link in your security chain not the weakest.
+Our services include:
         </p>
          {items.map((item, index) => (
            <div
@@ -51,7 +70,7 @@ export default function ResultsSection() {
              onClick={() => setSelectedIndex(index)}
            >
              {item.title}
-             <p className="font-[300] text-[14px]">{item.description}</p>
+             
            </div>
          ))}
        </div>
@@ -69,6 +88,7 @@ export default function ResultsSection() {
                {items[selectedIndex].title}
                <FaArrowUpRightFromSquare className="ml-2" />
              </h3>
+             <p className="font-[300] text-[14px]">{items[selectedIndex].description}</p>
              <ul className="mt-2 text-gray-600 list-disc list-inside">
                {items[selectedIndex].content.map((point, i) => (
                  <li key={i}>{point}</li>

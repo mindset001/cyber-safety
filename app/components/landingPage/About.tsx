@@ -16,11 +16,13 @@ const About = () => {
         {/* <h4 className="text-[#19b6d7] font-semibold text-lg">Our Story</h4> */}
         <h2 className="text-4xl font-bold text-gray-900 mt-2">About Us</h2>
         <p className="text-gray-600 mt-4">
-        Cyber Safety Alliance (CSA) is a Human Risk Management (HRM) and Cyber Awareness Training Firm that specializes in interactive cybersecurity education, behavioral risk mitigation, and compliance-driven training for individuals and organizations. We recognize that technology alone cannot protect businesses—human behavior is the first line of defense against cyber threats.
+        Cyber Safety Alliance (CSA) is a Human Risk Management and Cyber Awareness Training firm dedicated to helping organizations strengthen their people-focused security strategies. We specialize in interactive education, behavior-based risk reduction, and compliance-aligned training that empowers individuals to play an active role in cyber defense.
+
 
         </p>
         <p className="text-gray-600 mt-2">
-        Our approach is hands-on, engaging, and practical, ensuring that people—not just systems—are equipped to recognize, respond to, and prevent cyber risks in their daily interactions. From phishing attacks and social engineering scams to insider threats and data breaches, we help organizations build a strong cyber culture through immersive, gamified, and experiential learning.
+    Our journey began with a simple but urgent observation: too many organizations only take cybersecurity seriously after something goes wrong. Time and again, we saw breaches traced back not to broken firewalls or outdated systems, but to overlooked human behavior a missed warning sign, a clicked link, a moment of distraction.
+
 
         </p>
         {/* Animated Button */}

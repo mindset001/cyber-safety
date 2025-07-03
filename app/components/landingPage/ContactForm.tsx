@@ -2,6 +2,7 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { message } from 'antd';
+import QuarterSaturdaysPage from './QuarterSaturday';
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xdkekaor");
@@ -16,8 +17,9 @@ export default function ContactForm() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Take Control of Your Human Cyber Risk Today!
           </h2>
           <p className="text-gray-600">
-            Everything starts with a conversation. But there’s other ways to get in touch with us.
+           Join us for our upcoming Quarterly Webinar, where we’ll share key updates, spotlight stories, new features, and exclusive insights from The Cyber Safety Alliance team.
           </p>
+          <QuarterSaturdaysPage/>
         </div>
         
         {/* Right Side Form */}

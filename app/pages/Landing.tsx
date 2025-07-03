@@ -9,6 +9,7 @@ import Optimize from '../components/landingPage/Optimize'
 import Solutions from '../components/landingPage/Solutions'
 import ResultsSection from '../components/landingPage/Result'
 import Team from '../components/landingPage/Team'
+import QuarterSaturdaysPage from '../components/landingPage/QuarterSaturday'
 
 function Landing() {
   return (
