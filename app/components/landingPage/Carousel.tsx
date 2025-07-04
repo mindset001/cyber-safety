@@ -5,12 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import New3 from '../../../public/assets/business.jpg';
+import New2 from '../../../public/assets/human.jpg';
+import New4 from '../../../public/assets/hands.jpg';
+import New5 from '../../../public/assets/mda.jpg';
 
 const carouselItems = [
   {
     title: "Human-Centric Approach",
     description: "Focused on behavior, psychology, and decision-making beyond just technology",
-    image: New3,
+    image: New2,
   },
   {
     title: "Regulatory Compliance Ready",
@@ -20,18 +23,18 @@ const carouselItems = [
   {
     title: "Proven Risk Reduction Strategies",
     description: "Data-driven insights to measure actual improvements in cyber awareness",
-    image: New3,
+    image: New5,
   },
   {
     title: "Engaging, Hands-On Training",
     description: "People learn best by doing, not by sitting through dull PowerPoints",
-    image: New3,
+    image: New4,
   },
-  {
-    title: "Performance & Growth",
-    description: "Lorem Ipsum is simply dummy text of the printing industry.",
-    image: New3,
-  },
+  // {
+  //   title: "Performance & Growth",
+  //   description: "Lorem Ipsum is simply dummy text of the printing industry.",
+  //   image: New3,
+  // },
 ];
 
 export default function Carousel() {

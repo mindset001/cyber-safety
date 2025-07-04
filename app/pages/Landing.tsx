@@ -29,7 +29,7 @@ function Landing() {
         <Insights/>
         </div> */}
         {/* <Optimize/> */}
-        <div id='contact-us' className='flex'>
+        <div id='contact-us' className='flex mt-20'>
         <div className='w-1/2'>
           <ContactForm/>
         </div>
